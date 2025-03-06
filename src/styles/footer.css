@@ -1,0 +1,96 @@
+.footercontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* background-color: #333; */
+    color: #fff;
+  }
+  
+  .leftside {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rightside {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .copyright p {
+    margin: 0;
+  }
+  
+  .jspiders {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .jspiders span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .jspiders .java p, .jspiders .python p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .jspiders .number p, .jspiders .enqiury p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .jspiders .number p i, .jspiders .enqiury p i {
+    margin-right: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .footercontainer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .leftside {
+      margin-bottom: 20px;
+    }
+  
+    .rightside {
+      align-items: center;
+    }
+  
+    .jspiders {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .jspiders .number p, .jspiders .enqiury p {
+      font-size: 13px;
+    }
+  
+    .jspiders .java p, .jspiders .python p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footercontainer {
+      /* padding: 15px; */
+      background-color: rgba(240, 199, 206, 0.381);
+    }
+  
+    .jspiders .java p, .jspiders .python p {
+      font-size: 13px;
+    }
+  
+    .jspiders .number p, .jspiders .enqiury p {
+      font-size: 12px;
+    }
+  
+    .jspiders {
+      gap: 12px;
+    }
+  }
